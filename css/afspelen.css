@@ -1,0 +1,39 @@
+body {
+  background-image: url("../achtergronden/joda.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+article {
+  text-align: center;
+}
+
+video {
+  width: 60%;
+  height: 60%;
+}
+
+.Beschrijving {
+  background-color: black;
+  opacity: 0.7;
+  text-align: center;
+  line-height: 1.5;
+  margin: 1rem;
+}
+
+/*Phone*/
+@media only screen and (max-width: 425px) {
+  article{
+    margin-top: 3.5rem;
+  }
+
+}
+
+/*Desktop*/
+@media only screen and (min-width: 426px) {
+  nav {
+    height: 100%;
+  }
+}

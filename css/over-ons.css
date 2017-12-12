@@ -1,0 +1,52 @@
+/*Phone*/
+
+body {
+  background-image: url("../achtergronden/darth-vader.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+article {
+  text-align: center;
+  margin-top: 4rem;
+
+}
+
+@media only screen and (max-width :425px) {
+  .Redenen {
+    background-color: lightblue;
+    opacity: 0.7;
+    padding: 5rem;
+  }
+  .Voorstellen img {
+    margin: 1rem;
+    width: 30%;
+    height: 6rem;
+  }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 426px) {
+  /*article*/
+  nav {
+    height: 100%;
+  }
+  .Voorstellen img {
+    margin: 1rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  .Voorstellen {
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem;
+  }
+  .article-container {
+    flex: 1;
+  }
+  .Voorstellen h5 {
+    margin: 3rem;
+  }
+}

@@ -1,0 +1,87 @@
+body {
+    background-image: url("../achtergronden/bobba.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.Samenvatting{
+  background-color: black;
+  opacity: 0.7;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.Video-informatie {
+    display: flex;
+}
+
+/*Phone*/
+@media only screen and (max-width: 425px) {
+
+    .Redenen {
+        background-color: lightblue;
+        opacity: 0.7;
+        padding: 5rem;
+    }
+
+    .Samenvatting {
+        margin: 1rem;
+    }
+
+    img {
+        display: none;
+    }
+
+    .Video-informatie {
+        background-color: black;
+        opacity: 0.7;
+        background-image: url("../banners/The-Force-Awakens.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .informatie {
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+
+    .informatie h2 {
+        margin: 1rem;
+    }
+
+}
+
+/*Desktop*/
+@media only screen and (min-width: 426px) {
+    /*article*/
+    nav {
+        height: 100%;
+    }
+
+    .informatie {
+        flex-direction: column;
+        margin: 2rem;
+    }
+
+    .informatie h2 {
+        margin: 1rem;
+    }
+
+    .Samenvatting {
+        margin: 1rem 4rem;
+    }
+
+    .trailer {
+        display: inline-flex;
+    }
+
+    .article-container {
+        display: flex;
+        flex: 1;
+    }
+
+}

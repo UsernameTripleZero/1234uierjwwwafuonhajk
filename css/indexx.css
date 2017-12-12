@@ -1,0 +1,121 @@
+/*Phone*/
+
+body {
+  background-image: url("../achtergronden/darth-vader.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media only screen and (max-width: 425px) {
+  .Introductie {
+    height: 100vh;
+    background-color: black;
+    opacity: 0.8;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-top: 3em;
+  }
+  .Introductie h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .Redenen {
+    background-color: lightblue;
+    opacity: 0.7;
+    padding: 5rem;
+  }
+  .Redenen div:nth-child(1n+2) {
+    display: none;
+  }
+  .Redenen div {
+    border: 0.25rem solid red;
+    padding: 1rem;
+  }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 426px) {
+  /*article*/
+  nav {
+    height: 100%;
+  }
+  article {
+    flex: 1;
+  }
+  .article-container {
+    flex: 1;
+  }
+  .Introductie {
+    background-color: black;
+    opacity: 0.7;
+    overflow: hidden; /*verbergt de scrollbar*/
+    text-align: center;
+    height: 100vh;
+  }
+
+  .Introductie h2 {
+    margin: 1rem;
+    font-size: 2rem;
+  }
+
+  .Introductie > h2 {
+    margin-top: 4rem;
+  }
+
+  .Redenen {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightblue;
+    opacity: 0.7;
+    padding: 5rem;
+  }
+  .Redenen div {
+    border: 0.25rem solid yellow;
+    padding: 1rem;
+  }
+  /*starwars*/
+  /*starwars*/
+  /*starwars*/
+  /*starwars*/
+  /*starwars*/
+  /*starwars*/
+  .star-wars {
+    display: flex;
+    position: relative;
+    height: 800px;
+    color: #feda4a;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 200%;
+    letter-spacing: 6px;
+    perspective: 300px;
+    margin: 0 11rem;
+  }
+  .crawl {
+    position: relative;
+    transform-origin: 0% 100%;
+    animation: crawl 80s linear;
+  }
+}
+
+@keyframes crawl {
+  /*Begin*/
+  0% {
+    top: 800px;
+    transform: rotateX(20deg) translateZ(0);
+    font-size: 250%;
+    font-weight: 600;
+    margin: 0;
+    width: 100%;
+  }
+  /*eind*/
+  100% {
+    top: -6000px;
+    width: 400%;
+    margin: 0;
+    font-size: 250%;
+    font-weight: 600;
+    transform: rotateX(25deg) translateZ(-2050px);
+  }
+}

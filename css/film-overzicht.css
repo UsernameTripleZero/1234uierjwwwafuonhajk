@@ -1,0 +1,78 @@
+/*Reset*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url("../achtergronden/space.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-shadow: -1px -1px 0 yellow, 1px -1px 0 yellow, -1px 1px 0 yellow, 1px 1px 0 yellow;
+}
+.genre a {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0.5rem;
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+}
+
+.genre>p {
+  font-size: 2rem;
+}
+
+.genre {
+  margin: 0 10%;
+  text-align: center;
+}
+
+div {
+  display: inline-block;
+}
+
+.genre a img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: 10%;
+}
+.genre h1 {
+  margin: 0.5rem 0;
+}
+
+/*Phone*/
+
+@media only screen and (max-width: 425px) {
+  .movie-container div div:nth-child(1n+4) {
+    display: none;
+  }
+  .genre div {
+    text-align: left;
+    width: 40%;
+    height: 30%;
+  }
+  .genre>p {
+    margin: 2.5rem 1rem;
+  }
+}
+
+/*Desktop*/
+
+@media only screen and (min-width: 426px) {
+  /*article*/
+  .genre div {
+    width: 25%;
+  }
+  .genre>p {
+    margin: 3rem 1rem;
+  }
+}

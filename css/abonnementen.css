@@ -1,0 +1,111 @@
+body {
+  background-image: url("../achtergronden/joda.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+article h2 {
+  text-align: center;
+  padding: 2rem;
+}
+
+.article-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+button {
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.Accounts .fa-check-square-o {
+  display: inline-flex;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.Accounts h3, h4 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.Accounts ul {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-left: 0.5rem;
+  list-style-type: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+form input {
+  width: 40%;
+}
+
+.typen {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+form label {
+  margin: 0.5rem;
+}
+
+.Accounts {
+  display: inline-flex;
+  align-items: center;
+  border: solid 1px black;
+  flex-direction: column;
+  background-color: green;
+  line-height: 2;
+}
+
+/*Phone*/
+
+@media only screen and (max-width: 425px) {
+  .Accounts ul, h4, h3 {
+    font-size: 0.7rem;
+  }
+}
+
+/*Desktop*/
+
+@media only screen and (min-width: 426px) {
+  /*article*/
+  nav {
+    height: 100%;
+  }
+  .article-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+  }
+  .Accounts {
+    width: 15%;
+  }
+  .Accounts h3, h4 {
+    text-align: center;
+  }
+  .Accounts span {
+    font-size: 1.5rem;
+  }
+  .typen {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  form label {
+    margin: 0.5rem;
+  }
+}
